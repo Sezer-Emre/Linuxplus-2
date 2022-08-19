@@ -1,0 +1,19 @@
+env= -hangi environmentler tanimli onlari gosterir
+$PATH= -kodlarin tutuldugu yer ve baglantilarini gosterir.
+      -biz bir komut calistirdigimizda buraya bakar ve bulup getirir.
+echo $USER= userlari gosterir.
+echo $HOME= home director u gosterir.
+echo $EDITOR= editor hakkinda bilgi verir.
+echo UID= User ID sini gosterir.
+         -Kullanici ID leri aws de 1000 ile baslar ekledikce 1 artar.
+echo $TERM= terminal hakkinda bilgi verir.
+echo $Shell= shell hakkinda bilgi verir.
+echo $Lang= bilgisayar dilinde hangi anadil kullanildigini gosterir.
+printev= env gibi environmentleri gosterir.
+set= environment ve shell variablelerini hem yazdirmaya hem de ayarlamaya yariyor
+unset= variablesleri siliyor
+export= degiskenlerden birini tanimlarken kullaniyoruz.
+KEY=VALUE key degiskenine value atadik. (shell variable)
+NAME=emre NAme variablesine emre atadim(shell variable)
+export Name=emre(Environment variable) 
+export ALT=31(Environment variable)
