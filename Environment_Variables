@@ -17,3 +17,20 @@ KEY=VALUE key degiskenine value atadik. (shell variable)
 NAME=emre NAme variablesine emre atadim(shell variable)
 export Name=emre(Environment variable) 
 export ALT=31(Environment variable)
+sudo = yetki aliyoruz.
+sudo -l= sudo komutuyla hangi komutlari yapabilecegimizi goruyoruz.
+sudo command= root olarak islem yapariz
+sudo su -= root un ortam degiskenlerine gore hareket yapiyoruz.
+sudo su -username = belirttigimiz user in yetkileriyle hareket yapiyoruz
+NOTLAR;
+1) Environmentler sayi ile ve karakter ile baslamaz."_" haric
+ornegin;
+3_KEY=value
+-VAR=5
+clarus-way=test
+KEY_1?=value1 
+olusturabilecegimiz environmentler; 
+KEY=value
+_VAR=5
+clarus_way=test
+
