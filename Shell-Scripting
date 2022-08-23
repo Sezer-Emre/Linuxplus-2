@@ -1,0 +1,83 @@
+echo $PS1 ile hangi renklendirme oldugunu goruyoruz.
+Eger desistirmek istersek once export PS1="  " ile degistirip .bashrc dosyasina yerlestirirsek env. variable olarak kaydederiz ve bi sonraki acilista otamatik olarak gelir.
+
+Shebang=#!
+
+Bir dosya olusturup .sh seklinde bitecek sekilde icerisine Shebang ile (#!) baslayip #!/bin/bash yazarak script yazmaya basliyoruz.
+
+chmod +x test.sh ile test dosyasina yetki veriyoruz
+
+daha sonrasinda./test.sh seklinde cagiriyoruz.
+
+Eger PATH degiskenine export PATH=$PATH:/home/ec2-user seklinde variable olusturursak ./ yazmamiza da gerek kalmaz.
+
+
+Veya basina bash koyarak da dosyayi cagirdigimizda calisir.
+
+read komutu: veriyi okuyor kullanicidan veri istiyor.
+    örn; echo "Enter your name:"
+         read name
+         echo "Hello $name"
+
+read -p : echo yazmamiza gerek kalmadan cagirabiliriz
+
+   orn; read -p "Enter your name:" Name
+        echo "Hello $Name"
+
+read -s -p : gorulmesini istemedigimiz deger istedigimizde cagiriyoruz. Pass gibi.
+
+    örn;read -s -p "Enter your password:" PASSWORD(read-sp de yapabiliriz)
+        echo "Your password is: $PASSWORD "
+
+$0 : bash scriptin ismini tutar
+    echo "$0"
+
+$1-$9 : 9 a kadar arguman i busekilde uretebiliyoruz 9 dan sonra {10} {11} seklinde uretebiliyoruz
+  
+       echo "$1"
+       echo "$2"
+
+$# : kac arguman gonderilmis onu tutuyor
+
+     echo "$#"
+
+$@ : tum argumanlarin tamamini iceriyor.
+
+     echo "$@"
+
+$? : basari durumu basariliysa 0
+  
+     echo "$?"
+
+$$ : Process ID yi tutuyor.
+
+    echo "$$"
+
+$USER : kullaniciyi tutuyor
+
+    echo "$USER"
+
+$HOSTNAME : oan kullanilan makinanin adi
+
+    echo "$HOSTNAME"
+
+$SECONDS : script basladiktan sonra gecen saniyeyi veriyor.
+
+    echo "$SECONDS"
+
+$RANDOM : script nosu uretiyor.
+
+    echo "$RANDOM"
+
+
+$LINENO : script nosunu getiriyor.
+    
+    echo "$LINEO"
+
+                                    SIMPLE ARITMETIK
+
+expr : ardindan gelen islemi yapar ancak onu tutmaz.
+
+let : ardindan gelen islemi yapar degiskene veriyi atar.
+
+$((  )) : verilen islemi yapar.
